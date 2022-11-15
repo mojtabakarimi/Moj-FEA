@@ -1,0 +1,226 @@
+File D:\repos\Moj FEA\SAFE Model\Model1.$sf was saved on 2022-10-16 at 16:35:12
+ 
+TABLE:  "ANALYSIS MODELING OPTIONS"
+   "Two Dimensional Only"=Yes   "Rigid Diaphragm At Top"=No   "Ignore Vertical Offsets"=Yes
+ 
+TABLE:  "ANALYSIS OPTIONS - AUTOMATIC MESH SETTINGS FOR FLOORS"
+   "Mesh Option"=General   "Maximum Mesh Size"=1250
+ 
+TABLE:  "ANALYSIS OPTIONS - AUTOMATIC RECTANGULAR MESH OPTIONS FOR WALLS"
+   "Maximum Mesh Size"=1250
+ 
+TABLE:  "ANALYSIS OPTIONS - CRACKING ANALYSIS OPTIONS"
+   "Reinforcement Source"="User and Designed"   "Minimum Tension Ratio"=0.0018   "Minimum Compression Ratio"=0
+ 
+TABLE:  "ANALYSIS OPTIONS - DESIGN AND RESPONSE RECOVERY OPTIONS"
+   "Number Design Threads"=0   "Number Recovery Threads"=0   "Use Memory Mapped Files"="Program Determined"   "Allow Model Differences"=No
+ 
+TABLE:  "ANALYSIS OPTIONS - SAPFIRE OPTIONS"
+   "Solver Option"=Advanced   "Analysis Process"=Auto   "Number Analysis Threads"=0   "Max File Size"=0
+ 
+TABLE:  "AREA ASSIGNMENTS - AUTO EDGE CONSTRAINTS"
+   UniqueName=1   Constraint=Yes
+ 
+TABLE:  "AREA ASSIGNMENTS - FLOOR AUTO MESH OPTIONS"
+   UniqueName=1   "Mesh Option"="Auto Cookie Cut"   "At Beams"=Yes   "At Walls"=Yes   "At Grids"=No   Submesh=Yes   "Submesh Size"=200   "Add Restraints"=No
+ 
+TABLE:  "AREA ASSIGNMENTS - INSERTION POINT"
+   UniqueName=1   "Cardinal Point"=Top   Transform=No
+ 
+TABLE:  "AREA ASSIGNMENTS - SECTION PROPERTIES"
+   UniqueName=1   "Section Property"=Slab1   "Property Type"=Slab
+ 
+TABLE:  "AREA LOAD ASSIGNMENTS - UNIFORM"
+   UniqueName=1   "Load Pattern"=Dead   Direction=Gravity   Load=0.1   GUID=0ee4c3f5-1dbb-433d-9321-bb026d522b2e
+ 
+TABLE:  "COMPOSITE BEAM DESIGN PREFERENCES - AISC 360-16"
+   Shored?=No   "Middle Range"=70   "Pattern Live Load Factor"=0.75   "D/C Ratio Limit"=1   "Minimum PCC"=25   "Maximum PCC"=100   "Single Segment?"=No   "Min. Long. Spacing"=114.3   "Max. Long. Spacing"=914.4   "Min. Trans. Spacing"=76.2 _
+        "Max. Studs Per Row"=3   "Position of Studs"="Middle of the Ribs"   Camber?=Yes   "Camber DL"=80   "Min. Beam Depth"=342.9   "Min. Web Thick."=6.35   "Min. Beam Span"=7315.2   "Min. Camber, abs"=19.05   "Minimum Camber, L/"=900 _
+        "Camber Abs. Max Limit"=152.4   "Camber Max Ratio"=180   "Camber Interval"=6.35   "Round Camber Down?"=Yes   "Pre-Comp DL Ratio"=0   "SDL+LL Ratio"=240   "LL Ratio"=360   "Net Ratio"=240   "Ieff reduction Factor"=1 _
+        "Vibration Criterion"=Walking   "Occupancy Category"="Paper Office"   "Walking Acceleration Limit, a0/g"=0.005   "Damping Ratio - Walking"=0.025   "Optimize Price?"=Yes   "Steel Price ($)"=1   "Stud Price ($)"=2 _
+        "Camber Price ($)"=0.1   phi-b=0.9   phi-bcpp=0.9   phi-v=0.9   "Reaction Factor"=1
+ 
+TABLE:  "CONCRETE SLAB DESIGN LOAD COMBINATION DATA"
+   "Combo Type"=Strength   "Combo Name"=DConS1
+   "Combo Type"=Strength   "Combo Name"=DConS2
+ 
+TABLE:  "CONCRETE SLAB DESIGN OVERWRITES - FINITE ELEMENT BASED"
+   "Unique Name"=1   "Rebar Material"=A615Gr60   "Cover Specification Type"="From Preferences"   LLRF=1   Design?=Yes   "Ignote PT?"=No
+ 
+TABLE:  "CONCRETE SLAB DESIGN OVERWRITES - PUNCHING SHEAR - GENERAL"
+   "Unique Name"=1   "Check Punching Shear?"="Program Determined"   "Location Type"=Auto   "Perimeter Type"=Auto   "Effective Depth Type"=Auto   "Opening Definition"=Auto   "Reinforcement Type"=None
+   "Unique Name"=2   "Check Punching Shear?"="Program Determined"   "Location Type"=Auto   "Perimeter Type"=Auto   "Effective Depth Type"=Auto   "Opening Definition"=Auto   "Reinforcement Type"=None
+   "Unique Name"=3   "Check Punching Shear?"="Program Determined"   "Location Type"=Auto   "Perimeter Type"=Auto   "Effective Depth Type"=Auto   "Opening Definition"=Auto   "Reinforcement Type"=None
+   "Unique Name"=4   "Check Punching Shear?"="Program Determined"   "Location Type"=Auto   "Perimeter Type"=Auto   "Effective Depth Type"=Auto   "Opening Definition"=Auto   "Reinforcement Type"=None
+ 
+TABLE:  "CONCRETE SLAB DESIGN PREFERENCES - ACI 318-19"
+   PhiTen=0.9   PhiComp=0.65   PhiShear=0.75   "Increase Flexural Rebar?"=No   "Ignore Pu?"=Yes   CoverTop=15   CoverBot=15   BarSize=18   InnerLayer="Layer B"   PTCGSTop=25   PTCGSBotExt=40   PTCGSBotInt=25   SlabType="Two Way" _
+        "Cover Beam Top"=40   "Cover Beam Bottom"=40   "Bar Size Beam Flexure"=28   "Bar Size Beam Shear"=12   "PTCGS Beam Top"=50   "PTCGS Beam Bottom"=50   UserStress=No   InitConcRat=0.8   LLFraction=0.5
+ 
+TABLE:  "DECK PROPERTY DEFINITIONS"
+   Name=Deck1   "Deck Type"=Filled   "Slab Material"=4000Psi   "Deck Material"=A992Fy50   "Slab Depth"=87.5   "Rib Depth"=75   "Rib Width Top"=175   "Rib Width Bottom"=125   "Rib Spacing"=300   "Deck Shear Thickness"=1 _
+        "Deck Unit Weight"=0.000110124605179766   "Shear Stud Diameter"=19   "Shear Stud Height"=150   "Shear Stud Tensile Strength"=400   "f11 Modifier"=1   "f22 Modifier"=1   "f12 Modifier"=1   "m11 Modifier"=1   "m22 Modifier"=1 _
+        "m12 Modifier"=1   "v13 Modifier"=1   "v23 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Magenta   GUID=780501f5-a567-4f52-a979-ea4232a51def
+ 
+TABLE:  "DIMENSION LINE OBJECT GEOMETRY"
+   "Grid System"=GLOBAL   "Drawn X1"=0   "Drawn Y1"=0   "Drawn X2"=0   "Drawn Y2"=1000   "Display X1"=-1000   "Display Y1"=0   "Display X2"=-1000   "Display Y2"=1000   GUID=ca202552-bfbf-4df7-99e6-247f8e9efdb6
+   "Grid System"=GLOBAL   "Drawn X1"=0   "Drawn Y1"=1000   "Drawn X2"=1000   "Drawn Y2"=1000   "Display X1"=0   "Display Y1"=2000   "Display X2"=1000   "Display Y2"=2000   GUID=169bb7d5-ee49-466c-95cf-fc95fa969112
+ 
+TABLE:  "FLOOR OBJECT CONNECTIVITY"
+   "Unique Name"=1   UniquePt1=1   UniquePt2=2   UniquePt3=3   UniquePt4=4   GUID=20041879-c8ed-4f28-b6fe-6e0222c5e488
+ 
+TABLE:  "FRAME SECTION PROPERTY DEFINITIONS - CONCRETE RECTANGULAR"
+   Name=ConcBm   Material=4000Psi   "From File?"=No   Depth=500   Width=375   "Rigid Zone?"=No   "Notional Size Type"=Auto   "Notional Auto Factor"=1   "Section Type"=Beam   "Longitudinal Rebar Material"=A615Gr60 _
+        "Shear Rebar Material"=A615Gr60   "Flange Dimension Option"="Analysis Property"   "Cover Top"=60   "Cover Bottom"=60   "Area Modifier"=1   "As2 Modifier"=1   "As3 Modifier"=1   "J Modifier"=1   "I22 Modifier"=1   "I33 Modifier"=1 _
+        "Mass Modifier"=1   "Weight Modifier"=1   Color=Gray8Dark   GUID=2547f2e4-347e-4fe1-8e46-e4dbaf0e2e47
+   Name=ConcCol   Material=4000Psi   "From File?"=No   Depth=250   Width=250   "Rigid Zone?"=No   "Notional Size Type"=Auto   "Notional Auto Factor"=1   "Section Type"=Column   "Area Modifier"=1   "As2 Modifier"=1   "As3 Modifier"=1 _
+        "J Modifier"=1   "I22 Modifier"=1   "I33 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Yellow   GUID=d6b7328d-16f7-4d11-badd-aa3bd6ffd8f8
+ 
+TABLE:  "FRAME SECTION PROPERTY DEFINITIONS - STEEL I/WIDE FLANGE"
+   Name=SteelBm   Material=A992Fy50   "From File?"=No   "Total Depth"=500   "Top Flange Width"=166.666666666667   "Top Flange Thickness"=12.5   "Web Thickness"=6.25   "Bottom Flange Width"=166.666666666667   "Bottom Flange Thickness"=12.5 _
+        "Fillet Radius"=0   "Area Modifier"=1   "As2 Modifier"=1   "As3 Modifier"=1   "J Modifier"=1   "I22 Modifier"=1   "I33 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Magenta   GUID=f36869b8-c765-4b3e-a4f6-76a3a270f492
+   Name=SteelCol   Material=A992Fy50   "From File?"=No   "Total Depth"=500   "Top Flange Width"=500   "Top Flange Thickness"=25   "Web Thickness"=12.5   "Bottom Flange Width"=500   "Bottom Flange Thickness"=25   "Fillet Radius"=0 _
+        "Area Modifier"=1   "As2 Modifier"=1   "As3 Modifier"=1   "J Modifier"=1   "I22 Modifier"=1   "I33 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Red   GUID=f2f2d65a-f2da-4710-8e11-29ab71e2c99b
+ 
+TABLE:  "GRID DEFINITIONS - GENERAL"
+   Name=GLOBAL   Type=Cartesian   Ux=0   Uy=0   Rz=0   "Datum Name"=Story1   "Story Name Above"=Story2   "Story Name Below"=Base   "Model Datum"=3000   "Story Height Above"=3000   "Story Height Below"=3000   "Bubble Size"=200   Color=Gray6   GUID=4bcf06a9-0bca-4889-b5e4-0af546ffd385
+ 
+TABLE:  "GRID DEFINITIONS - GRID LINES"
+   Name=GLOBAL   "Grid Line Type"="X (Cartesian)"   ID=1   Ordinate=0   "Bubble Location"=End   Visible=Yes
+   Name=GLOBAL   "Grid Line Type"="X (Cartesian)"   ID=2   Ordinate=1000   "Bubble Location"=End   Visible=Yes
+   Name=GLOBAL   "Grid Line Type"="Y (Cartesian)"   ID=A   Ordinate=0   "Bubble Location"=Start   Visible=Yes
+   Name=GLOBAL   "Grid Line Type"="Y (Cartesian)"   ID=B   Ordinate=1000   "Bubble Location"=Start   Visible=Yes
+ 
+TABLE:  "GROUP DEFINITIONS"
+   Name=All   Color=Yellow   "Steel Design?"=No   "Concrete Design?"=No   "Composite Design?"=No   GUID=f643fc1a-69e9-46bc-811f-8bf0b838769e
+ 
+TABLE:  "JOINT ASSIGNMENTS - RESTRAINTS"
+   UniqueName=1   UX=Yes   UY=Yes   UZ=Yes   RX=Yes   RY=Yes   RZ=Yes
+   UniqueName=2   UX=Yes   UY=Yes   UZ=Yes   RX=Yes   RY=Yes   RZ=Yes
+   UniqueName=3   UX=Yes   UY=Yes   UZ=Yes   RX=Yes   RY=Yes   RZ=Yes
+   UniqueName=4   UX=Yes   UY=Yes   UZ=Yes   RX=Yes   RY=Yes   RZ=Yes
+ 
+TABLE:  "LOAD CASE DEFINITIONS - LINEAR STATIC"
+   Name=Dead   "Exclude Group"=None   "Initial Condition"=Unstressed   "Load Type"=Load   "Load Name"=Dead   "Load SF"=1   "Design Type"="Program Determined"   GUID=6f396afc-77bd-4b4a-950f-3286fd0c51e5
+   Name=Live   "Exclude Group"=None   "Initial Condition"=Unstressed   "Load Type"=Load   "Load Name"=Live   "Load SF"=1   "Design Type"="Program Determined"   GUID=fc2b63c9-fcb8-47a5-a516-8d2d36c5dd47
+ 
+TABLE:  "LOAD COMBINATION DEFINITIONS"
+   Name=DConS1   Type="Linear Add"   "Is Auto"=Yes   "Load Name"=Dead   SF=1.4   GUID=3efa453e-6ef2-4651-aa6d-a39de643fb54   Notes="Dead  [Strength]"
+   Name=DConS2   Type="Linear Add"   "Is Auto"=Yes   "Load Name"=Dead   SF=1.2   GUID=8a0eebe9-0a14-4f2f-a49e-5a51a708c223   Notes="Dead + Live  [Strength]"
+   Name=DConS2   "Load Name"=Live   SF=1.6
+ 
+TABLE:  "LOAD PATTERN DEFINITIONS"
+   Name=~LLRF   "Is Auto Load"=No   Type=Other   "Self Weight Multiplier"=0   GUID=f526b9dd-d7aa-4411-8edb-e45dd2178bd9
+   Name=Dead   "Is Auto Load"=No   Type=Dead   "Self Weight Multiplier"=1   GUID=a12d83a0-b938-4afe-8848-cda846242df3
+   Name=Live   "Is Auto Load"=No   Type=Live   "Self Weight Multiplier"=0   GUID=4439a692-2c31-46ad-b351-214f83983c8c
+ 
+TABLE:  "MASS SOURCE DEFINITION"
+   Name=MsSrc1   "Is Default"=Yes   "Include Lateral Mass?"=No   "Include Vertical Mass?"=Yes   "Lump Mass?"=Yes   "Source Self Mass?"=Yes   "Source Added Mass?"=Yes   "Source Load Patterns?"=No   "Move Mass Centroid?"=No   GUID=e123e1b0-ffa2-47a1-9609-f1d5391351ee
+ 
+TABLE:  "MATERIAL PROPERTIES - BASIC MECHANICAL PROPERTIES"
+   Material=4000Psi   DensityType=Weight   UnitWeight=0   UnitMass=0   E1=1   G12=0.384615384615385   U12=0.3   A1=9.9E-06
+   Material=A416Gr270   DensityType=Weight   UnitWeight=7.69728639422648E-05   UnitMass=7.84904737995992E-09   E1=196500.5998512   A1=1.17E-05
+   Material=A615Gr60   DensityType=Weight   UnitWeight=7.69728639422648E-05   UnitMass=7.84904737995992E-09   E1=199947.978795958   A1=1.17E-05
+   Material=A992Fy50   DensityType=Weight   UnitWeight=7.69728639422648E-05   UnitMass=7.84904737995992E-09   E1=199947.978795958   G12=76903.068767676   U12=0.3   A1=1.17E-05
+ 
+TABLE:  "MATERIAL PROPERTIES - CONCRETE DATA"
+   Material=4000Psi   Fc=27.5790315580631   LtWtConc=No   IsUserFr=No   SSCurveOpt=Mander   SSHysType=Concrete   SFc=0.00221914   SCap=0.005   FinalSlope=-0.1   FAngle=0   DAngle=0
+ 
+TABLE:  "MATERIAL PROPERTIES - GENERAL"
+   Material=4000Psi   Type=Concrete   SymType=Isotropic   Grade="f'c 4000 psi"   Color=Gray8Dark
+   Material=A416Gr270   Type=Tendon   SymType=Uniaxial   Grade="Grade 270"   Color=Red
+   Material=A615Gr60   Type=Rebar   SymType=Uniaxial   Grade="Grade 60"   Color=Green
+   Material=A992Fy50   Type=Steel   SymType=Isotropic   Grade="Grade 50"   Color=Magenta   GUID=4584cb18-2dd7-4501-916d-120c14c356e1
+ 
+TABLE:  "MATERIAL PROPERTIES - REBAR DATA"
+   Material=A615Gr60   Fy=413.685473370947   Fu=620.52821005642   Fye=455.054020708041   Fue=682.581031062062   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.01   SCap=0.09   FinalSlope=-0.1
+ 
+TABLE:  "MATERIAL PROPERTIES - STEEL DATA"
+   Material=A992Fy50   Fy=344.737894475789   Fu=448.159262818526   Fye=379.211683923368   Fue=492.975189100378   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.015   SMax=0.11   SRup=0.17   FinalSlope=-0.1
+ 
+TABLE:  "MATERIAL PROPERTIES - TENDON DATA"
+   Material=A416Gr270   Fy=1689.90515872032   Fu=1861.58463016926   SSCurveOpt="270 ksi"   SSHysType=Kinematic   FinalSlope=-0.1
+ 
+TABLE:  "MISCELLANEOUS OPTIONS"
+   "Start Page"=Yes   "Value at Cursor"=Yes   "Frame Info"=Yes   "Bounding Plane"=No   "Architectural Dimensioning"=No   "Moments on Tension Side"=Yes   "Animation Sound"=Yes   "Auto Save"=No   Crosshairs=No   "Model Explorer"=No
+ 
+TABLE:  "OPTIONS - COLORS - DISPLAY"
+   "Device Type"=Screen   ColorColumns=10507331   ColorBeams=10507331   ColorBraces=10507331   ColorLinks=10507331   ColorSprings=Black   ColorTendons=DarkCyan   ColorSlabPanels=Green   ColorWalls=Red   ColorFloors=Gray4 _
+        ColorNullObjects=Gray8Dark   ColorOpenings=Black   ColorColStripA=Red   ColorColStripB=Blue   ColorMidStripA=Yellow   ColorMidStripB=Cyan   ColorStripEdge=16744703   ColorOtherStripFill=Green   ColorSupportLines=13816320 _
+        ColorDimLines=10461087   ColorText=2105376   ColorGridLines=Gray6   ColorBackground=White   ColorUserMeshEdge=5065984   ColorStlDesign=DarkCyan   ColorCompDesign=Cyan   ColorConcDesign=4227327   ColorNoDesign=4227327 _
+        TransColumns=0.5   TransBeams=0.5   TransBraces=0.5   TransFloors=0.5   TransWalls=0.4   TransLinks=0.5   Darkness=0.3
+   "Device Type"=Printer   ColorColumns=Black   ColorBeams=Black   ColorBraces=Black   ColorLinks=Gray8Dark   ColorSprings=Gray8Dark   ColorTendons=Black   ColorSlabPanels=Green   ColorWalls=Gray4   ColorFloors=Gray4 _
+        ColorNullObjects=Gray4   ColorOpenings=Gray8Dark   ColorColStripA=Black   ColorColStripB=Black   ColorMidStripA=Black   ColorMidStripB=Black   ColorStripEdge=Black   ColorOtherStripFill=Black   ColorSupportLines=Black _
+        ColorDimLines=Gray4   ColorText=Black   ColorGridLines=Gray4   ColorBackground=White   ColorUserMeshEdge=Gray4   ColorStlDesign=Black   ColorCompDesign=Gray4   ColorConcDesign=Gray8Dark   ColorNoDesign=Gray4   TransColumns=0.5 _
+        TransBeams=0.5   TransBraces=0.5   TransFloors=0.5   TransWalls=0.4   TransLinks=0.5   Darkness=0.5
+   "Device Type"="Color Printer"   ColorColumns=Blue   ColorBeams=Blue   ColorBraces=Blue   ColorLinks=10516060   ColorSprings=DarkCyan   ColorTendons=DarkCyan   ColorSlabPanels=Green   ColorWalls=14865869   ColorFloors=Gray4 _
+        ColorNullObjects=Gray8Dark   ColorOpenings=Black   ColorColStripA=DarkCyan   ColorColStripB=DarkCyan   ColorMidStripA=DarkCyan   ColorMidStripB=DarkCyan   ColorStripEdge=DarkCyan   ColorOtherStripFill=DarkCyan _
+        ColorSupportLines=DarkCyan   ColorDimLines=10461087   ColorText=Black   ColorGridLines=Gray8Dark   ColorBackground=White   ColorUserMeshEdge=5065984   ColorStlDesign=DarkCyan   ColorCompDesign=Cyan   ColorConcDesign=4227327 _
+        ColorNoDesign=4227327   TransColumns=0.5   TransBeams=0.5   TransBraces=0.5   TransFloors=0.5   TransWalls=0.4   TransLinks=0.5   Darkness=0.3
+ 
+TABLE:  "OPTIONS - COLORS - OUTPUT"
+   "Device Type"="Screen Classic"   Contour1=13107400   Contour2=6553828   Contour3=Red   Contour4=16639   Contour5=Orange   Contour6=43775   Contour7=54527   Contour8=Yellow   Contour9=65408   Contour10=Green   Contour11=8453888 _
+        Contour12=Cyan   Contour13=16755200   Contour14=16733440   Contour15=Blue   TransContours=0   Ratio1=Cyan   Ratio2=Green   Ratio3=Yellow   Ratio4=Magenta   Ratio5=Red   RatioNotD=Gray4   RatioVal1=0.5   RatioVal2=0.7   RatioVal3=0.9 _
+        RatioVal4=1   HState1=Gray4   HState2=Green   HState3=Cyan   HState4=Magenta   HState5=Red   HStatus1=Gray4   HStatus2=Green   HStatus3=Cyan   HStatus4=Red   DFillPos=Yellow   DFillNeg=Red   DFillRange=Blue   TransDiag=0.2
+   "Device Type"="Screen GrayScale"   Contour1=Black   Contour2=3158064   Contour3=4210752   Contour4=5263440   Contour5=6316128   Contour6=7368816   Contour7=Gray8Dark   Contour8=Gray7   Contour9=Gray6   Contour10=Gray5   Contour11=Gray4 _
+        Contour12=Gray3   Contour13=Gray2   Contour14=Gray1Light   Contour15=White   TransContours=0   Ratio1=Gray2   Ratio2=Gray4   Ratio3=Gray8Dark   Ratio4=4210752   Ratio5=Black   RatioNotD=Gray4   RatioVal1=0.5   RatioVal2=0.7 _
+        RatioVal3=0.9   RatioVal4=1   HState1=Gray2   HState2=Gray4   HState3=Gray8Dark   HState4=4210752   HState5=Black   HStatus1=Gray2   HStatus2=Gray4   HStatus3=Gray8Dark   HStatus4=4210752   DFillPos=Gray8Dark   DFillNeg=Gray4 _
+        DFillRange=Gray8Dark   TransDiag=0.2
+   "Device Type"=Printer   Contour1=Black   Contour2=3158064   Contour3=4210752   Contour4=5263440   Contour5=6316128   Contour6=7368816   Contour7=Gray8Dark   Contour8=Gray7   Contour9=Gray6   Contour10=Gray5   Contour11=Gray4 _
+        Contour12=Gray3   Contour13=Gray2   Contour14=Gray1Light   Contour15=White   TransContours=0   Ratio1=Gray2   Ratio2=Gray4   Ratio3=Gray8Dark   Ratio4=4210752   Ratio5=Black   RatioNotD=Gray4   RatioVal1=0.5   RatioVal2=0.7 _
+        RatioVal3=0.9   RatioVal4=1   HState1=Gray2   HState2=Gray4   HState3=Gray8Dark   HState4=4210752   HState5=Black   HStatus1=Gray2   HStatus2=Gray4   HStatus3=Gray8Dark   HStatus4=4210752   DFillPos=Gray8Dark   DFillNeg=Gray8Dark _
+        DFillRange=4210752   TransDiag=0.2
+   "Device Type"="Color Printer"   Contour1=13107400   Contour2=6553828   Contour3=Red   Contour4=16639   Contour5=Orange   Contour6=43775   Contour7=54527   Contour8=Yellow   Contour9=65408   Contour10=Green   Contour11=8453888 _
+        Contour12=Cyan   Contour13=16755200   Contour14=16733440   Contour15=Blue   TransContours=0   Ratio1=Cyan   Ratio2=Green   Ratio3=Yellow   Ratio4=Magenta   Ratio5=Red   RatioNotD=Gray4   RatioVal1=0.5   RatioVal2=0.7   RatioVal3=0.9 _
+        RatioVal4=1   HState1=Gray4   HState2=Green   HState3=Cyan   HState4=Magenta   HState5=Red   HStatus1=Gray4   HStatus2=Green   HStatus3=Cyan   HStatus4=Red   DFillPos=Yellow   DFillNeg=Red   DFillRange=Blue   TransDiag=0.2
+ 
+TABLE:  "POINT OBJECT CONNECTIVITY"
+   UniqueName=1   "Is Auto Point"=No   IsSpecial=No   X=0   Y=0   Z=3000   GUID=1043cb1b-a166-4864-abdb-5d3edd59638c
+   UniqueName=2   "Is Auto Point"=No   IsSpecial=No   X=1000   Y=0   Z=3000   GUID=46fabb23-bfa8-47e3-bf6f-1d145dcbf103
+   UniqueName=3   "Is Auto Point"=No   IsSpecial=No   X=1000   Y=1000   Z=3000   GUID=63ee6131-e98f-4fe8-bb20-09f2d2800ae3
+   UniqueName=4   "Is Auto Point"=No   IsSpecial=No   X=0   Y=1000   Z=3000   GUID=9112f13d-9872-4b9e-9151-89bab0909af5
+ 
+TABLE:  "PREFERENCES - GRAPHICS"
+   MaxFontSize=8   MinFontSize=3   MinSLineThick=1   MinPLineThick=4   AntiAliasing?=Yes   ConstantLineThick?=Yes   ShadingWithinElement?=No   AutoZoomStep=10   ShrinkFactor=70
+ 
+TABLE:  "PREFERENCES - TOLERANCE"
+   MergeTol=1   MaxInclVertCol=1   MaxInclHorzBmFlr=20
+ 
+TABLE:  "PROGRAM CONTROL"
+   ProgramName=SAFE   Version=20.3.0   CurrUnits="N, mm, C"   CompBmCode="AISC 360-16"   ConcFrmCode="ACI 318-19"   ConcSlbCode="ACI 318-19"
+ 
+TABLE:  "PROJECT INFORMATION"
+   "Model Name"=Model1   "Revision Number"=0
+ 
+TABLE:  "REINFORCING BAR SIZES"
+   Name=6   Diameter=6   Area=28.2999992370605
+   Name=8   Diameter=8   Area=50.2999992370605
+   Name=10   Diameter=10   Area=78.5
+   Name=12   Diameter=12   Area=113.099998474121
+   Name=14   Diameter=14   Area=153.899993896484
+   Name=16   Diameter=16   Area=201.100006103516
+   Name=18   Diameter=18   Area=254.5
+   Name=20   Diameter=20   Area=314.200012207031
+   Name=22   Diameter=22   Area=380.100006103516
+   Name=25   Diameter=25   Area=490.899993896484
+   Name=26   Diameter=26   Area=530.900024414063
+   Name=28   Diameter=28   Area=615.799987792969
+   Name=32   Diameter=32   Area=804.200012207031
+   Name=36   Diameter=36   Area=1017.90002441406
+   Name=40   Diameter=40   Area=1256.59997558594
+   Name=50   Diameter=50   Area=1963.5
+ 
+TABLE:  "SLAB PROPERTY DEFINITIONS"
+   Name=Plank1   "Modeling Type"=Membrane   "Property Type"=Slab   Material=4000Psi   "Slab Thickness"=200   "One Way Load Distribution?"=Yes   "Notional Size Type"=Auto   "Notional Auto Factor"=1   "f11 Modifier"=1   "f22 Modifier"=1 _
+        "f12 Modifier"=1   "m11 Modifier"=1   "m22 Modifier"=1   "m12 Modifier"=1   "v13 Modifier"=1   "v23 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Gray8Dark   GUID=f5ebe027-684a-4304-a0db-3c8c4e14b6d4   Orthotropic?=No
+   Name=Slab1   "Modeling Type"=Shell-Thin   "Property Type"=Slab   Material=4000Psi   "Slab Thickness"=200   "Notional Size Type"=Auto   "Notional Auto Factor"=1   "f11 Modifier"=1   "f22 Modifier"=1   "f12 Modifier"=1   "m11 Modifier"=1 _
+        "m22 Modifier"=1   "m12 Modifier"=1   "v13 Modifier"=1   "v23 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Red   GUID=3c4a27df-e773-41e3-bf77-7d0a6afe5e60   Orthotropic?=No
+ 
+TABLE:  "TENDON SECTION PROPERTIES"
+   Name=Tendon1   Material=A416Gr270   StrandArea=98.70948   Color=Green   GUID=57cfd375-b675-4674-ae27-1d3f362430e1
+ 
+TABLE:  "WALL PROPERTY DEFINITIONS - SPECIFIED"
+   Name=Wall1   "Modeling Type"=Shell-Thin   Material=4000Psi   "Wall Thickness"=250   "Include Auto Rigid Zone?"=No   "Notional Size Type"=Auto   "Notional Auto Factor"=1   "f11 Modifier"=1   "f22 Modifier"=1   "f12 Modifier"=1 _
+        "m11 Modifier"=1   "m22 Modifier"=1   "m12 Modifier"=1   "v13 Modifier"=1   "v23 Modifier"=1   "Mass Modifier"=1   "Weight Modifier"=1   Color=Yellow   GUID=a4e4325c-b2fd-4eda-a98c-3fc4cf55cc13
+ 
+END TABLE DATA
